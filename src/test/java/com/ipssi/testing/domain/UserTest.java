@@ -1,5 +1,6 @@
-package domain;
+package com.ipssi.testing.domain;
 
+import com.ipssi.testing.Gender;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -25,6 +26,8 @@ public class UserTest {
     @Test
     public void should_return_validate_user() {
         User user = new User(firstName, lastName, birthday, sex, zipCode, city, address);
+
+        System.out.print(birthday);
 
         assertThat(user.getFirstName()).isEqualTo(firstName);
         assertThat(user.getLastName()).isEqualTo(lastName);

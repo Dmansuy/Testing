@@ -1,5 +1,6 @@
-package domain;
+package com.ipssi.testing.domain;
 
+import com.ipssi.testing.Gender;
 import org.apache.commons.lang3.Validate;
 
 import javax.annotation.Nonnull;
@@ -7,8 +8,7 @@ import java.time.LocalDateTime;
 
 import static java.util.Objects.requireNonNull;
 
-
-class User {
+public class User {
 
     private String firstName;
     private String lastName;
